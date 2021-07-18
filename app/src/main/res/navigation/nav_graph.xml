@@ -8,10 +8,18 @@
         android:id="@+id/menu_home"
         android:name="com.thinkers.volatilememo.home.HomeFragment"
         android:label="home_fragment"
-        tools:layout="@layout/home_fragment" />
+        tools:layout="@layout/home_fragment" >
+        <action
+            android:id="@+id/action_menu_home_to_memo_fragment"
+            app:destination="@id/memo_fragment" />
+    </fragment>
     <fragment
         android:id="@+id/menu_favorite"
         android:name="com.thinkers.volatilememo.favorite.FavoriteFragment"
         android:label="favorite_fragment"
         tools:layout="@layout/favorite_fragment" />
+    <fragment
+        android:id="@+id/memo_fragment"
+        android:name="com.thinkers.volatilememo.memo.MemoFragment"
+        android:label="MemoFragment" />
 </navigation>
